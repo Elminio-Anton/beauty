@@ -1,0 +1,161 @@
+.header {
+	display: grid;
+	//grid-auto-flow:row;
+	grid-template-columns: repeat(4, max-content) repeat(4, 80px);
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+
+	* {
+		//vertical-align: middle;
+	}
+
+	.logo {
+		padding: 0 35px 0 36px;
+		height: 56px;
+
+		.logo-img {}
+
+		.logo-text {}
+	}
+
+	.tel-container {
+		display: flex;
+
+		.tel {
+			margin: auto;
+			padding: 0 30px;
+			width: max-content;
+			height: max-content;
+			vertical-align: middle;
+		}
+	}
+
+	.select-container {
+		padding: 36px 30px 35px 30px;
+
+		.select {
+			padding: 0 35px 0 0;
+		}
+	}
+
+	.button-container {
+		padding: 25px 31px 25px 30px;
+
+		.button-a11 {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			width: 270px;
+			height: 40px;
+
+			.eye {
+				width: 25.26px;
+				height: 17.33px;
+			}
+		}
+	}
+
+	.img-container {
+		display: flex;
+
+		.social-img {
+			margin: auto;
+			width: max-content;
+			height: max-content;
+		}
+	}
+}
+
+.cosmetology-intro-container {
+	height: 700px;
+	display: grid;
+	grid-template-rows: 87px 746px 80px;
+	justify-content: center;
+	grid-template-areas: "title title" ". ." "buttons buttons";
+	grid-template-columns: 550px 745px;
+
+	.cosmetology-title-container {
+		width: 100%;
+		max-width: 1295px;
+		height: 87px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		grid-area: title;
+
+		.nav-container {
+			width: 100%;
+			max-width: 1920px;
+
+			.nav {
+				display: flex;
+				width: 100%;
+				justify-content: space-around;
+			}
+		}
+
+		.make-an-appointment {
+			margin: 0 10px 0 35px;
+			width: 175px;
+			height: 40px;
+		}
+	}
+
+	.cosmetology {
+		width: 550px;
+		display: grid;
+		.cosmetology-title {
+			width: 100%;
+		}
+
+		.cosmetology-text {}
+	}
+
+	.cosmetology-buttons {
+		display: grid;
+		grid-auto-flow: row;
+		grid-template-columns: 50% 25% 25%;
+		grid-area: buttons;
+		.cosmetology-button {}
+	}
+}
+
+.offers {
+	.offers-title {
+		.offerts-item {
+			.offer-sticker {}
+
+			.offer-text {}
+
+			.offer-arrow {}
+		}
+	}
+}
+
+.upper-footer {
+	.service-container {
+		.service-title {}
+
+		.service-link {}
+	}
+
+	.contacts {
+		.contacts-label {}
+
+		.footer-tel {}
+
+		.main-address {}
+
+		.howToGetThere {}
+
+		.additional-address {}
+	}
+}
+
+/* @media (min-width: 1295px) {
+	.cosmetology-intro-container {
+		width: 1295px;
+		margin: auto;
+	}
+} */

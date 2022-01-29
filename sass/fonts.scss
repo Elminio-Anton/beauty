@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 500;
+    src: url("../fonts/Gilroy/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 400;
+    src: url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 700;
+    src: url("../fonts/Gilroy/Gilroy-Bold.woff") format("woff");
+}
+
+.header {
+    .tel {
+        .tel {
+            //height:min-content;
+            color: black;
+            font-family: "Gilroy", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-decoration: none;
+        }
+    }
+
+    .select-container {
+        .select {
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+
+            option[class^="option"] {
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+
+    .button-a11 {
+        font-family: "Gilroy", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+.cosmetology-intro-container {
+
+    .cosmetology-title-container {
+
+        .nav-container {
+            .nav {
+
+                .nav-item {
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 150%;
+                }
+            }
+        }
+
+        .make-an-appointment {}
+    }
+}

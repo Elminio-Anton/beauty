@@ -1,0 +1,39 @@
+.body {
+  background-color: #e5e5e5; }
+
+.header {
+  background-color: white;
+  height: 90px;
+  width: 100%;
+  max-width: 1920px; }
+  .header > * {
+    border-right: 1px solid #c4c4c4; }
+  .header > :nth-child(1) {
+    border-left: 1px solid #c4c4c4; }
+  .header * {
+    height: 100%; }
+  .header .select-container .select {
+    border: none;
+    height: max-content;
+    position: relative;
+    appearance: none;
+    background: url("../img/select-triangle.png") no-repeat right center; }
+  .header .button-a11 {
+    color: white;
+    background-color: #00868a; }
+
+.cosmetology-intro-container {
+  background-color: #4fbfa5; }
+  .cosmetology-intro-container .cosmetology-title-container {
+    margin: auto; }
+    .cosmetology-intro-container .cosmetology-title-container .nav-container .nav {
+      list-style: none; }
+      .cosmetology-intro-container .cosmetology-title-container .nav-container .nav .nav-item {
+        text-decoration: none;
+        color: white; }
+    .cosmetology-intro-container .cosmetology-title-container .make-an-appointment {
+      border: none; }
+  .cosmetology-intro-container .cosmetology .cosmetology-title {
+    color: white; }
+  .cosmetology-intro-container .cosmetology .cosmetology-text {
+    color: white; }

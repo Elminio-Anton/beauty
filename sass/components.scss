@@ -1,0 +1,134 @@
+$blue-dark: #00868a;
+$blue-light: #4fbfa5;
+$body-background: #e5e5e5;
+$border: #c4c4c4;
+
+.body {
+	background-color: $body-background;
+}
+
+.header {
+	background-color: white;
+	height: 90px;
+	width: 100%;
+	max-width: 1920px;
+
+	>* {
+		border-right: 1px solid $border;
+	}
+
+	> :nth-child(1) {
+		border-left: 1px solid $border;
+	}
+
+	* {
+		//width: max-content;
+		height: 100%;
+	}
+
+	.logo {}
+
+	.tel {
+	}
+
+	.select-container {
+		.select {
+			//height: min-content;
+			border: none;
+			height: max-content;
+			position: relative;
+			appearance: none;
+			background: url("../img/select-triangle.png") no-repeat right center;
+
+		}
+	}
+
+	.button-a11 {
+		color: white;
+		background-color: $blue-dark;
+
+	}
+}
+
+.cosmetology-intro-container {
+	background-color: $blue-light;
+
+	.cosmetology-title-container {
+		margin: auto;
+
+		.nav-container {
+			.nav {
+				list-style: none;
+
+				.nav-item {
+					text-decoration: none;
+					color: white;
+				}
+			}
+		}
+
+		.make-an-appointment {
+			border: none;
+		}
+	}
+
+	.cosmetology {
+		.cosmetology-title {
+			color: white;
+		}
+
+		.cosmetology-text {
+			color: white;
+		}
+	}
+
+	.cosmetology-buttons {
+		.cosmetology-button {}
+	}
+}
+
+.offers {
+	.offers-title {
+		.offerts-item {
+			.offer-sticker {}
+
+			.offer-text {}
+
+			.offer-arrow {}
+		}
+	}
+}
+
+.upper-footer {
+	.service-container {
+		.service-title {}
+
+		.service-link {}
+	}
+
+	.contacts {
+		.contacts-label {}
+
+		.footer-tel {}
+
+		.main-address {}
+
+		.howToGetThere {}
+
+		.additional-address {}
+	}
+}
+
+.footer {
+	.license {}
+
+	.privacy-policy {}
+
+	.button-container {
+		.button-a11 {
+			.eye {}
+		}
+	}
+
+	.img-container {}
+}
