@@ -72,7 +72,7 @@
 	display: grid;
 	grid-template-rows: 87px 746px 80px;
 	justify-content: center;
-	grid-template-areas: "title title" ". ." "buttons buttons";
+	grid-template-areas: "title title"". .""buttons buttons";
 	grid-template-columns: 550px 745px;
 
 	.cosmetology-title-container {
@@ -105,18 +105,26 @@
 	.cosmetology {
 		width: 550px;
 		display: grid;
+
 		.cosmetology-title {
 			width: 100%;
 		}
 
 		.cosmetology-text {}
+		.cosmetology-button-details{
+			width: 163px;
+			height: 50px;
+		}
+		.slider-controls{
+
+		}
 	}
 
 	.cosmetology-buttons {
 		display: grid;
-		grid-auto-flow: row;
 		grid-template-columns: 50% 25% 25%;
 		grid-area: buttons;
+
 		.cosmetology-button {}
 	}
 }
