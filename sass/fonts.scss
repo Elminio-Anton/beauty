@@ -1,3 +1,5 @@
+$blue-dark: #00868a;
+
 @font-face {
     font-family: "Gilroy";
     font-weight: 500;
@@ -75,5 +77,189 @@
         }
 
         .make-an-appointment {}
+
+
+
+
+    }
+
+    .cosmetology {
+        .cosmetology-title {
+            color: white;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 150%;
+        }
+
+        .cosmetology-text {
+            color: white;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 150%;
+        }
+
+        .cosmetology-button-details {
+            color: white;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: 0.05em;
+        }
+    }
+
+    .cosmetology-buttons {
+        .cosmetology-button {
+            color: white;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 150%;
+        }
+    }
+}
+
+.information {
+
+    .innovation {
+
+        .title {
+            color: white;
+            line-height: 40px;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            //line-height: 21px;
+
+        }
+
+        .info {
+            color: white;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 150%;
+        }
+
+        .link-details {}
+
+        .label {
+            color: white;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 150%;
+        }
+    }
+
+    .numbers {
+        .title {
+            color: white;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 40px;
+
+        }
+
+        .number {
+            .digits {
+                opacity: 0.5;
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 150%;
+            }
+
+            .letters {
+                opacity: 0.5;
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 150%;
+            }
+
+            &:hover {
+
+                .digits,
+                .letters {
+                    opacity: 1;
+                }
+            }
+
+        }
+
+        .radio-number {
+            &:checked+* {
+                .digits {
+                    color: $blue-dark;
+                    opacity: 1;
+                    font-size: 96px;
+                }
+
+                .letters {
+                    opacity: 1;
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    .news {
+        .title {
+            color: white;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 40px;
+
+        }
+
+        .radio-news {}
+
+        .news-label {
+            color: white;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+        }
+
+        .news-content {
+            .news-container {
+                .news-title {
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 150%;
+                }
+
+                .news-p-list {
+                    .news-list-item {
+                        font-family: Gilroy;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                }
+
+            }
+        }
     }
 }

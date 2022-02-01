@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 500;
+  src: url("../fonts/Gilroy/Gilroy-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 400;
+  src: url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 700;
+  src: url("../fonts/Gilroy/Gilroy-Bold.woff") format("woff"); }
+
+.header .tel .tel {
+  color: black;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none; }
+
+.header .select-container .select {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px; }
+  .header .select-container .select option[class^="option"] {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px; }
+
+.header .button-a11 {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px; }
+
+.cosmetology-intro-container .cosmetology-title-container .nav-container .nav .nav-item {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%; }
+
+.cosmetology-intro-container .cosmetology .cosmetology-title {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 150%; }
+
+.cosmetology-intro-container .cosmetology .cosmetology-text {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%; }
+
+.cosmetology-intro-container .cosmetology .cosmetology-button-details {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em; }
+
+.cosmetology-intro-container .cosmetology-buttons .cosmetology-button {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 150%; }
+
+.information .innovation .title {
+  color: white;
+  line-height: 40px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px; }
+
+.information .innovation .info {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 150%; }
+
+.information .innovation .label {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%; }
+
+.information .numbers .title {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px; }
+
+.information .numbers .number .digits {
+  opacity: 0.5;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%; }
+
+.information .numbers .number .letters {
+  opacity: 0.5;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%; }
+
+.information .numbers .number:hover .digits,
+.information .numbers .number:hover .letters {
+  opacity: 1; }
+
+.information .numbers .radio-number:checked + * .digits {
+  color: #00868a;
+  opacity: 1;
+  font-size: 96px; }
+
+.information .numbers .radio-number:checked + * .letters {
+  opacity: 1;
+  font-size: 28px; }
+
+.information .news .title {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px; }
+
+.information .news .news-label {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%; }
+
+.information .news .news-content .news-container .news-title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%; }
+
+.information .news .news-content .news-container .news-p-list .news-list-item {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px; }

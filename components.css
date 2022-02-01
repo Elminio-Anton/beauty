@@ -20,7 +20,8 @@
     background: url("../img/select-triangle.png") no-repeat right center; }
   .header .button-a11 {
     color: white;
-    background-color: #00868a; }
+    background-color: #00868a;
+    border: none; }
 
 .cosmetology-intro-container {
   background-color: #4fbfa5; }
@@ -33,7 +34,40 @@
         color: white; }
     .cosmetology-intro-container .cosmetology-title-container .make-an-appointment {
       border: none; }
-  .cosmetology-intro-container .cosmetology .cosmetology-title {
-    color: white; }
-  .cosmetology-intro-container .cosmetology .cosmetology-text {
-    color: white; }
+  .cosmetology-intro-container .cosmetology .cosmetology-button-details {
+    background-color: #00868a;
+    border: none; }
+  .cosmetology-intro-container .cosmetology .slider-controls .slider-control {
+    border: solid 1px white;
+    cursor: pointer; }
+    .cosmetology-intro-container .cosmetology .slider-controls .slider-control.slider-control-prev {
+      background: center no-repeat url("../img/slide-left.png");
+      border-right: none; }
+    .cosmetology-intro-container .cosmetology .slider-controls .slider-control.slider-control-next {
+      background: center no-repeat url("../img/slide-right.png"); }
+  .cosmetology-intro-container .cosmetology-buttons .cosmetology-button {
+    background-color: #00868a;
+    border: none;
+    cursor: pointer; }
+
+.information {
+  background-color: white; }
+  .information .innovation {
+    background: linear-gradient(#00868a 0px, #00868a 350px, transparent 350px, transparent 100%), no-repeat url("../img/first-slide.png"), #00868a;
+    background-size: 100%;
+    background-position: left top 140%; }
+    .information .innovation .title {
+      background-color: #4fbfa5; }
+    .information .innovation .link-details {
+      border: solid 1px white;
+      background: center no-repeat url("../img/slide-right.png"); }
+  .information .numbers .title {
+    background-color: #4fbfa5; }
+  .information .news {
+    background-color: #4fbfa5; }
+    .information .news .title {
+      background-color: #00868a; }
+    .information .news .radio-news:checked + * {
+      background-color: #00868a; }
+    .information .news .news-content {
+      background-color: rgba(0, 134, 138, 0.1); }

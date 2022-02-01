@@ -1,3 +1,8 @@
+$blue-dark: #00868a;
+$blue-light: #4fbfa5;
+$body-background: #e5e5e5;
+$border: #c4c4c4;
+
 .header {
 	display: grid;
 	//grid-auto-flow:row;
@@ -70,7 +75,7 @@
 .cosmetology-intro-container {
 	height: 700px;
 	display: grid;
-	grid-template-rows: 87px 746px 80px;
+	grid-template-rows: 87px 533px 80px;
 	justify-content: center;
 	grid-template-areas: "title title"". .""buttons buttons";
 	grid-template-columns: 550px 745px;
@@ -105,18 +110,42 @@
 	.cosmetology {
 		width: 550px;
 		display: grid;
+		grid-template-rows: max-content max-content 90px 134px;
 
 		.cosmetology-title {
 			width: 100%;
+			height: 72px;
+			margin: 133px 0 20px 0;
 		}
 
-		.cosmetology-text {}
-		.cosmetology-button-details{
+		.cosmetology-text {
+			width: 416px;
+		}
+
+		.cosmetology-button-details {
+			margin-top: 40px;
 			width: 163px;
 			height: 50px;
 		}
-		.slider-controls{
 
+		.cosmetology-button-details {}
+
+		.slider-controls {
+			height: min-content;
+			display: flex;
+			padding: 0 60px 60px 0;
+			align-self: flex-end;
+			justify-self: flex-end;
+
+			.slider-control {
+				display: block;
+				width: 60px;
+				height: 50px;
+
+				.slider-control-prev {
+					width: 59px;
+				}
+			}
 		}
 	}
 
@@ -125,7 +154,166 @@
 		grid-template-columns: 50% 25% 25%;
 		grid-area: buttons;
 
-		.cosmetology-button {}
+		*[type="radio"] {
+			display: none;
+		}
+
+		input:checked+* {
+			background-color: $blue-light;
+		}
+
+		.cosmetology-button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
+.information {
+	padding: 80px 0;
+	height: 1344px;
+	width: 100%;
+	max-width: 1296px;
+	display: grid;
+	margin: auto;
+	grid-template-columns: 526px 770px;
+	grid-template-rows: 580px 504px;
+	grid-gap: 80px 0;
+
+	.innovation {
+		width: 526px;
+		height: 580px;
+		padding: 35px 0 45px 40px;
+
+		.title {
+			width: 125px;
+			height: 40px;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+
+		.info {}
+
+		.link-container {
+			display: flex;
+			width: 160px;
+			justify-content: space-between;
+			align-items: center;
+			padding-top: 25px;
+
+			.link-details {
+				display: inline-block;
+				width: 50px;
+				height: 40px;
+			}
+
+			.label {}
+		}
+
+	}
+
+	.numbers {
+		height: 485px;
+		width: 636px;
+		display: grid;
+		grid-template-rows: 70px repeat(4, minmax(min-content, 1fr));
+		align-self: center;
+		justify-self: center;
+		grid-gap: 15px 0;
+		position: relative;
+
+		.title {
+			width: 186px;
+			height: 40px;
+			text-align: center;
+		}
+
+		.number {
+			display: flex;
+			align-items: center;
+			width: 214px;
+			z-index: 2;
+
+			.digits {
+				padding-right: 20px;
+			}
+
+			.letters {}
+		}
+
+		.radio-number {
+			display: none;
+
+			&:checked+* {
+				&.number {
+					width: 460px;
+
+					.digits {
+						padding-right: 30px;
+					}
+				}
+			}
+		}
+
+		.patent {
+			position: absolute;
+			bottom: -30px;
+			right: -20px;
+			z-index: 1;
+		}
+	}
+
+	.news {
+		display: grid;
+		grid-template-columns: 526px 770px;
+		grid-template-rows: 105px repeat(3, max-content);
+
+		.title {
+			width: 101px;
+			height: 40px;
+			margin: 35px 0 30px 40px;
+			text-align: center;
+		}
+
+		.radio-news {
+			display: none;
+		}
+
+		.news-label {
+			padding: 35px 40px;
+		}
+
+		.news-content {
+			grid-area: 1/2/5/3;
+			padding: 35px 60px;
+
+			.news-container {
+				.news-title {
+					width: 100%;
+					padding-bottom: 25px;
+				}
+
+				.news-p-list {
+					//width: 629px;
+					list-style: none;
+					width: calc(629px + 18px);
+					padding-left: 18px;
+					.news-list-item {
+						position: relative;
+						&::before{
+							content: "●";
+							color: $blue-dark;
+							position: absolute;
+							left: -18px;
+						}
+						&:not(:last-child){
+							margin-bottom: 15px;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 

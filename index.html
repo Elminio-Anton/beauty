@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty</title>
-    <script src="index.js"></script>
     <link rel="stylesheet" href="main.css">
+    <script defer src="./simple-adaptive-slider.js"></script>
+    <script src="index.js"></script>
+
 </head>
 
 <body class="body">
@@ -55,31 +57,92 @@
                     человека
                     благополучного и успешного.
                 </p>
-                <button class="cosmetology-button-details" id="cosmetology-button-details"></button>
+                <button class="cosmetology-button-details" id="cosmetology-button-details">ПОДРОБНЕЕ</button>
                 <div class="slider-controls">
-                    <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
-                    <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+                    <a class="slider-control slider-control-prev" href="#" role="button" id="slider-prev"></a>
+                    <a class="slider-control slider-control-next" href="#" role="button" id="slider-next"></a>
                 </div>
             </div>
             <div class="slider">
                 <div class="slider__wrapper">
                     <div class="slider__items">
                         <div class="slider__item">
-                            <img src="./img/first-slide.png" alt="some awesome image">
+                            <img src="/img/first-slide.png" alt="some awesome image">
                         </div>
                         <div class="slider__item">
+                            <img src="/img/second-slide.png" alt="some awesome image">
                         </div>
                         <div class="slider__item">
+                            <img src="/img/third-slide.png" alt="some awesome image">
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="cosmetology-buttons">
-                <button class="cosmetology-button" id=""></button>
-                <button class="cosmetology-button" id=""></button>
-                <button class="cosmetology-button" id=""></button>
+                <input name="cosmetology-buttons" type="radio" id="button-procedures"></input>
+                <label class="cosmetology-button" for="button-procedures">Комплексные процедуры</label>
+                <input name="cosmetology-buttons" type="radio" id="button-education" checked></input>
+                <label class="cosmetology-button" for="button-education">Центр обучения</label>
+                <input name="cosmetology-buttons" type="radio" id="button-vip"></input>
+                <label class="cosmetology-button" for="button-vip">VIP клиентам</label>
             </div>
         </div>
+        <div class="information">
+            <article class="innovation">
+                <h5 class="title">Инновации</h5>
+                <span class="info">Мы практикуем новый курс процедур аппаратной косметологии
+                </span>
+                <div class="link-container">
+                    <a class="link-details" href="#"></a>
+                    <span class="label">ПОДРОБНЕЕ</span>
+                </div>
+            </article>
+            <article class="numbers">
+                <h5 class="title">Эстетика красоты</h5>
+                <input class="radio-number" type="radio" name="statistics" id="number1">
+                <label for="number1" class="number">
+                    <span class="digits">78</span>
+                    <span class="letters">Современных центра в странах СНГ</span>
+                </label>
+                <input class="radio-number" type="radio" name="statistics" id="number2">
+                <label for="number2" class="number">
+                    <span class="digits">78</span>
+                    <span class="letters">Современных центра в странах СНГ</span>
+
+                </label>
+                <input class="radio-number" type="radio" name="statistics" id="number3" checked>
+                <label for="number3" class="number">
+                    <span class="digits">20</span>
+                    <span class="letters">Уникальных патентов в области косметологии</span>
+
+                </label>
+                <input class="radio-number" type="radio" name="statistics" id="number4">
+                <label for="number4" class="number">
+                    <span class="digits">78</span>
+                    <span class="letters">Современных центра в странах СНГ</span>
+
+                </label>
+                <img class="patent" src="./img/patent.png" alt="some awesome image">
+            </article>
+            <article class="news">
+                <h5 class="title">Новости</h5>
+                <input class="radio-news" type="radio" name="news" value="0" id="news1" checked>
+                <label for="news1" class="news-label">Почему рекомендуется посещать профессионального косметолога.
+                    Мнение
+                    специалистов центра
+                </label>
+                <input class="radio-news" type="radio" name="news" value="1" id="news2">
+                <label for="news2" class="news-label">Стандартизация деятельности клиник в соответствии с ISO 9001:2015.
+                </label>
+                <input class="radio-news" type="radio" name="news" value="2" id="news3">
+                <label for="news3" class="news-label">Индивидуальный подход к каждому пациенту и подбор оптимальных
+                    косметологических методик.
+                </label>
+                <div class="news-content"></div>
+            </article>
+        </div>
+
         <section class="offers">
             <h4 class="offers-title">Актуальные спецпредложения</h4>
             <article class="offerts-item"><span class="offer-sticker">Косметология</span><span

@@ -1,7 +1,8 @@
+@charset "UTF-8";
 @import url(../simple-adaptive-slider.css);
 * {
   box-sizing: border-box;
-  overflow: hidden; }
+  margin: 0; }
 
 .header {
   display: grid;
@@ -45,7 +46,7 @@
 .cosmetology-intro-container {
   height: 700px;
   display: grid;
-  grid-template-rows: 87px 746px 80px;
+  grid-template-rows: 87px 533px 80px;
   justify-content: center;
   grid-template-areas: "title title" ". ." "buttons buttons";
   grid-template-columns: 550px 745px; }
@@ -70,16 +71,135 @@
       height: 40px; }
   .cosmetology-intro-container .cosmetology {
     width: 550px;
-    display: grid; }
+    display: grid;
+    grid-template-rows: max-content max-content 90px 134px; }
     .cosmetology-intro-container .cosmetology .cosmetology-title {
-      width: 100%; }
+      width: 100%;
+      height: 72px;
+      margin: 133px 0 20px 0; }
+    .cosmetology-intro-container .cosmetology .cosmetology-text {
+      width: 416px; }
     .cosmetology-intro-container .cosmetology .cosmetology-button-details {
+      margin-top: 40px;
       width: 163px;
       height: 50px; }
+    .cosmetology-intro-container .cosmetology .slider-controls {
+      height: min-content;
+      display: flex;
+      padding: 0 60px 60px 0;
+      align-self: flex-end;
+      justify-self: flex-end; }
+      .cosmetology-intro-container .cosmetology .slider-controls .slider-control {
+        display: block;
+        width: 60px;
+        height: 50px; }
+        .cosmetology-intro-container .cosmetology .slider-controls .slider-control .slider-control-prev {
+          width: 59px; }
   .cosmetology-intro-container .cosmetology-buttons {
     display: grid;
     grid-template-columns: 50% 25% 25%;
     grid-area: buttons; }
+    .cosmetology-intro-container .cosmetology-buttons *[type="radio"] {
+      display: none; }
+    .cosmetology-intro-container .cosmetology-buttons input:checked + * {
+      background-color: #4fbfa5; }
+    .cosmetology-intro-container .cosmetology-buttons .cosmetology-button {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+.information {
+  padding: 80px 0;
+  height: 1344px;
+  width: 100%;
+  max-width: 1296px;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 526px 770px;
+  grid-template-rows: 580px 504px;
+  grid-gap: 80px 0; }
+  .information .innovation {
+    width: 526px;
+    height: 580px;
+    padding: 35px 0 45px 40px; }
+    .information .innovation .title {
+      width: 125px;
+      height: 40px;
+      margin-bottom: 30px;
+      text-align: center; }
+    .information .innovation .link-container {
+      display: flex;
+      width: 160px;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 25px; }
+      .information .innovation .link-container .link-details {
+        display: inline-block;
+        width: 50px;
+        height: 40px; }
+  .information .numbers {
+    height: 485px;
+    width: 636px;
+    display: grid;
+    grid-template-rows: 70px repeat(4, minmax(min-content, 1fr));
+    align-self: center;
+    justify-self: center;
+    grid-gap: 15px 0;
+    position: relative; }
+    .information .numbers .title {
+      width: 186px;
+      height: 40px;
+      text-align: center; }
+    .information .numbers .number {
+      display: flex;
+      align-items: center;
+      width: 214px;
+      z-index: 2; }
+      .information .numbers .number .digits {
+        padding-right: 20px; }
+    .information .numbers .radio-number {
+      display: none; }
+      .information .numbers .radio-number:checked + *.number {
+        width: 460px; }
+        .information .numbers .radio-number:checked + *.number .digits {
+          padding-right: 30px; }
+    .information .numbers .patent {
+      position: absolute;
+      bottom: -30px;
+      right: -20px;
+      z-index: 1; }
+  .information .news {
+    display: grid;
+    grid-template-columns: 526px 770px;
+    grid-template-rows: 105px repeat(3, max-content); }
+    .information .news .title {
+      width: 101px;
+      height: 40px;
+      margin: 35px 0 30px 40px;
+      text-align: center; }
+    .information .news .radio-news {
+      display: none; }
+    .information .news .news-label {
+      padding: 35px 40px; }
+    .information .news .news-content {
+      grid-area: 1/2/5/3;
+      padding: 35px 60px; }
+      .information .news .news-content .news-container .news-title {
+        width: 100%;
+        padding-bottom: 25px; }
+      .information .news .news-content .news-container .news-p-list {
+        list-style: none;
+        width: calc(629px + 18px);
+        padding-left: 18px; }
+        .information .news .news-content .news-container .news-p-list .news-list-item {
+          position: relative; }
+          .information .news .news-content .news-container .news-p-list .news-list-item::before {
+            content: "●";
+            color: #00868a;
+            position: absolute;
+            left: -18px; }
+          .information .news .news-content .news-container .news-p-list .news-list-item:not(:last-child) {
+            margin-bottom: 15px; }
 
 /* @media (min-width: 1295px) {
 	.cosmetology-intro-container {
@@ -109,7 +229,8 @@
     background: url("../img/select-triangle.png") no-repeat right center; }
   .header .button-a11 {
     color: white;
-    background-color: #00868a; }
+    background-color: #00868a;
+    border: none; }
 
 .cosmetology-intro-container {
   background-color: #4fbfa5; }
@@ -122,10 +243,43 @@
         color: white; }
     .cosmetology-intro-container .cosmetology-title-container .make-an-appointment {
       border: none; }
-  .cosmetology-intro-container .cosmetology .cosmetology-title {
-    color: white; }
-  .cosmetology-intro-container .cosmetology .cosmetology-text {
-    color: white; }
+  .cosmetology-intro-container .cosmetology .cosmetology-button-details {
+    background-color: #00868a;
+    border: none; }
+  .cosmetology-intro-container .cosmetology .slider-controls .slider-control {
+    border: solid 1px white;
+    cursor: pointer; }
+    .cosmetology-intro-container .cosmetology .slider-controls .slider-control.slider-control-prev {
+      background: center no-repeat url("../img/slide-left.png");
+      border-right: none; }
+    .cosmetology-intro-container .cosmetology .slider-controls .slider-control.slider-control-next {
+      background: center no-repeat url("../img/slide-right.png"); }
+  .cosmetology-intro-container .cosmetology-buttons .cosmetology-button {
+    background-color: #00868a;
+    border: none;
+    cursor: pointer; }
+
+.information {
+  background-color: white; }
+  .information .innovation {
+    background: linear-gradient(#00868a 0px, #00868a 350px, transparent 350px, transparent 100%), no-repeat url("../img/first-slide.png"), #00868a;
+    background-size: 100%;
+    background-position: left top 140%; }
+    .information .innovation .title {
+      background-color: #4fbfa5; }
+    .information .innovation .link-details {
+      border: solid 1px white;
+      background: center no-repeat url("../img/slide-right.png"); }
+  .information .numbers .title {
+    background-color: #4fbfa5; }
+  .information .news {
+    background-color: #4fbfa5; }
+    .information .news .title {
+      background-color: #00868a; }
+    .information .news .radio-news:checked + * {
+      background-color: #00868a; }
+    .information .news .news-content {
+      background-color: rgba(0, 134, 138, 0.1); }
 
 @font-face {
   font-family: "Gilroy";
@@ -177,3 +331,127 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 150%; }
+
+.cosmetology-intro-container .cosmetology .cosmetology-title {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 150%; }
+
+.cosmetology-intro-container .cosmetology .cosmetology-text {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%; }
+
+.cosmetology-intro-container .cosmetology .cosmetology-button-details {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em; }
+
+.cosmetology-intro-container .cosmetology-buttons .cosmetology-button {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 150%; }
+
+.information .innovation .title {
+  color: white;
+  line-height: 40px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px; }
+
+.information .innovation .info {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 150%; }
+
+.information .innovation .label {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%; }
+
+.information .numbers .title {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px; }
+
+.information .numbers .number .digits {
+  opacity: 0.5;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%; }
+
+.information .numbers .number .letters {
+  opacity: 0.5;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%; }
+
+.information .numbers .number:hover .digits,
+.information .numbers .number:hover .letters {
+  opacity: 1; }
+
+.information .numbers .radio-number:checked + * .digits {
+  color: #00868a;
+  opacity: 1;
+  font-size: 96px; }
+
+.information .numbers .radio-number:checked + * .letters {
+  opacity: 1;
+  font-size: 28px; }
+
+.information .news .title {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px; }
+
+.information .news .news-label {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%; }
+
+.information .news .news-content .news-container .news-title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%; }
+
+.information .news .news-content .news-container .news-p-list .news-list-item {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px; }

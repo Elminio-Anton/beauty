@@ -2,6 +2,7 @@ $blue-dark: #00868a;
 $blue-light: #4fbfa5;
 $body-background: #e5e5e5;
 $border: #c4c4c4;
+$blue-light-opacity: rgba(0, 134, 138, 0.1);
 
 .body {
 	background-color: $body-background;
@@ -45,6 +46,7 @@ $border: #c4c4c4;
 	.button-a11 {
 		color: white;
 		background-color: $blue-dark;
+		border: none;
 
 	}
 }
@@ -72,17 +74,109 @@ $border: #c4c4c4;
 	}
 
 	.cosmetology {
-		.cosmetology-title {
-			color: white;
+		.cosmetology-title {}
+
+		.cosmetology-text {}
+
+		.cosmetology-button-details {
+			background-color: $blue-dark;
+			border: none;
 		}
 
-		.cosmetology-text {
-			color: white;
+		.slider-controls {
+			.slider-control {
+				border: solid 1px white;
+				cursor: pointer;
+
+				&.slider-control-prev {
+					background: center no-repeat url("../img/slide-left.png");
+					border-right: none;
+				}
+
+				&.slider-control-next {
+					background: center no-repeat url("../img/slide-right.png");
+				}
+			}
 		}
+
 	}
 
 	.cosmetology-buttons {
-		.cosmetology-button {}
+		.cosmetology-button {
+			background-color: $blue-dark;
+			border: none;
+			cursor: pointer;
+		}
+	}
+}
+
+.information {
+	background-color: white;
+
+	.innovation {
+		background: linear-gradient($blue-dark 0px, $blue-dark 350px, transparent 350px, transparent 100%),
+			no-repeat url("../img/first-slide.png"),
+			$blue-dark;
+		background-size: 100%;
+		background-position: left top 140%;
+
+		.title {
+			background-color: $blue-light;
+		}
+
+		.info {}
+
+		.link-details {
+			border: solid 1px white;
+			background: center no-repeat url("../img/slide-right.png");
+		}
+
+		.label {}
+	}
+
+	.numbers {
+
+		//background: top 75px left 310px no-repeat url("../img/patent.png");
+		.title {
+			background-color: $blue-light;
+		}
+
+		.number {}
+
+		.radio-number {}
+	}
+
+
+	.news {
+		background-color: $blue-light;
+
+		.title {
+			background-color: $blue-dark;
+		}
+
+		.radio-news {
+			&:checked+* {
+				background-color: $blue-dark;
+			}
+		}
+
+		.news-label {}
+
+		.news-content {
+			background-color: $blue-light-opacity;
+
+			.news-container {
+
+				.news-title {}
+
+				.news-p-list {
+					.news-list-item {
+
+					}
+				}
+
+			}
+		}
 	}
 }
 
