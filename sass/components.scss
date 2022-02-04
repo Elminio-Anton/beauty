@@ -1,11 +1,11 @@
 $blue-dark: #00868a;
 $blue-light: #4fbfa5;
-$body-background: #e5e5e5;
-$border: #c4c4c4;
+//$body-background: #e5e5e5;
+$border: rgba(196, 196, 196, 0.5);
 $blue-light-opacity: rgba(0, 134, 138, 0.1);
 
 .body {
-	background-color: $body-background;
+	background-color: white;
 }
 
 .header {
@@ -170,9 +170,7 @@ $blue-light-opacity: rgba(0, 134, 138, 0.1);
 				.news-title {}
 
 				.news-p-list {
-					.news-list-item {
-
-					}
+					.news-list-item {}
 				}
 
 			}
@@ -181,18 +179,49 @@ $blue-light-opacity: rgba(0, 134, 138, 0.1);
 }
 
 .offers {
+	background: linear-gradient($blue-light-opacity 0px, $blue-light-opacity 350px, transparent 350px);
+
 	.offers-title {
-		.offerts-item {
-			.offer-sticker {}
+		color: #00868a;
+	}
 
-			.offer-text {}
+	.item-1 {
+		background: top no-repeat url("../img/offer-1.png"), $blue-dark;
+	}
 
-			.offer-arrow {}
+	.item-2 {
+		background: top no-repeat url("../img/offer-2.png"), $blue-dark;
+
+	}
+
+	.item-3 {
+		background: top no-repeat url("../img/offer-3.png"), $blue-dark;
+
+	}
+
+	.item-4 {
+		background: top no-repeat url("../img/offer-4.png"), $blue-dark;
+
+	}
+
+	.offers-item {
+		.offer-sticker {
+			background-color: #4fbfa5;
+		}
+
+		.offer-text {}
+
+		.offer-arrow {
+			background: center no-repeat url("../img/slide-right.png");
+			border: solid 1px white;
+			cursor: pointer;
 		}
 	}
+
 }
 
 .upper-footer {
+
 	.service-container {
 		.service-title {}
 
@@ -200,28 +229,50 @@ $blue-light-opacity: rgba(0, 134, 138, 0.1);
 	}
 
 	.contacts {
-		.contacts-label {}
+		.contacts-label {
+			opacity: 0.5;
+		}
 
-		.footer-tel {}
+		.footer-tel {
+			text-decoration: none;
+		}
 
 		.main-address {}
 
-		.howToGetThere {}
+		.howToGetThere {
+			background-color: $blue-dark;
+			border: none;
+			cursor: pointer;
+		}
 
 		.additional-address {}
 	}
 }
 
 .footer {
+	border: solid 1px $border;
+	> :nth-last-child(-n+5){
+		border-left: solid 1px $border;
+	}
 	.license {}
 
-	.privacy-policy {}
+	.privacy-policy {
+		&:visited{
+			color: black;
+		}
+	}
 
 	.button-container {
 		.button-a11 {
+			color: white;
+			background-color: $blue-dark;
+			border: none;
+
 			.eye {}
 		}
 	}
 
-	.img-container {}
+	.img-container {
+		cursor: pointer;
+	}
 }

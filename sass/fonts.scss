@@ -263,3 +263,127 @@ $blue-dark: #00868a;
         }
     }
 }
+
+.offers {
+
+    .offers-title {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 72px;
+    }
+
+    .offers-item {
+        .offer-sticker {
+            line-height: 40px;
+            color: white;
+        }
+
+        .offer-text {
+            color: white;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 31.5px;
+        }
+
+        .offer-arrow {}
+    }
+
+}
+
+.upper-footer {
+
+    .service-container {
+        .service-title {
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 31.5px;
+        }
+
+        .service-link {
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    .contacts {
+        .contacts-label {
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 16.5px;
+        }
+
+        .footer-tel {
+            color: black;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 31.5px;
+        }
+
+        address[class$="address"] {
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 31.5px;
+        }
+
+        .main-address {}
+
+        .howToGetThere {
+            color: white;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.05em;
+        }
+
+        .additional-address {}
+    }
+}
+
+.footer {
+    .license {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .privacy-policy {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .button-container {
+        .button-a11 {
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+
+            .eye {}
+        }
+    }
+
+    .img-container {}
+}

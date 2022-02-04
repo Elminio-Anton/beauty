@@ -3,355 +3,488 @@ $blue-light: #4fbfa5;
 $body-background: #e5e5e5;
 $border: #c4c4c4;
 
-.header {
-	display: grid;
-	//grid-auto-flow:row;
-	grid-template-columns: repeat(4, max-content) repeat(4, 80px);
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-
-	* {
-		//vertical-align: middle;
-	}
-
-	.logo {
-		padding: 0 35px 0 36px;
-		height: 56px;
-
-		.logo-img {}
-
-		.logo-text {}
-	}
-
-	.tel-container {
-		display: flex;
-
-		.tel {
-			margin: auto;
-			padding: 0 30px;
-			width: max-content;
-			height: max-content;
-			vertical-align: middle;
-		}
-	}
-
-	.select-container {
-		padding: 36px 30px 35px 30px;
-
-		.select {
-			padding: 0 35px 0 0;
-		}
-	}
-
-	.button-container {
-		padding: 25px 31px 25px 30px;
-
-		.button-a11 {
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-			width: 270px;
-			height: 40px;
-
-			.eye {
-				width: 25.26px;
-				height: 17.33px;
-			}
-		}
-	}
-
-	.img-container {
-		display: flex;
-
-		.social-img {
-			margin: auto;
-			width: max-content;
-			height: max-content;
-		}
-	}
-}
-
-.cosmetology-intro-container {
-	height: 700px;
-	display: grid;
-	grid-template-rows: 87px 533px 80px;
-	justify-content: center;
-	grid-template-areas: "title title"". .""buttons buttons";
-	grid-template-columns: 550px 745px;
-
-	.cosmetology-title-container {
-		width: 100%;
-		max-width: 1295px;
-		height: 87px;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		grid-area: title;
-
-		.nav-container {
-			width: 100%;
-			max-width: 1920px;
-
-			.nav {
-				display: flex;
-				width: 100%;
-				justify-content: space-around;
-			}
-		}
-
-		.make-an-appointment {
-			margin: 0 10px 0 35px;
-			width: 175px;
-			height: 40px;
-		}
-	}
-
-	.cosmetology {
-		width: 550px;
+.body {
+	.header {
 		display: grid;
-		grid-template-rows: max-content max-content 90px 134px;
+		//grid-auto-flow:row;
+		grid-template-columns: repeat(4, max-content) repeat(4, 80px);
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		margin: auto;
 
-		.cosmetology-title {
-			width: 100%;
-			height: 72px;
-			margin: 133px 0 20px 0;
+		* {
+			//vertical-align: middle;
 		}
 
-		.cosmetology-text {
-			width: 416px;
-		}
-
-		.cosmetology-button-details {
-			margin-top: 40px;
-			width: 163px;
-			height: 50px;
-		}
-
-		.cosmetology-button-details {}
-
-		.slider-controls {
-			height: min-content;
+		.logo {
+			padding: 0 35px 0 36px;
+			height: 100%; //56px;
 			display: flex;
-			padding: 0 60px 60px 0;
-			align-self: flex-end;
-			justify-self: flex-end;
 
-			.slider-control {
-				display: block;
-				width: 60px;
-				height: 50px;
+			.logo-img {
+				height: 55px;
+				margin: auto;
+			}
 
-				.slider-control-prev {
-					width: 59px;
+			.logo-text {}
+		}
+
+		.tel-container {
+			display: flex;
+
+			.tel {
+				margin: auto;
+				padding: 0 30px;
+				width: max-content;
+				height: max-content;
+				vertical-align: middle;
+			}
+		}
+
+		.select-container {
+			padding: 36px 30px 35px 30px;
+
+			.select {
+				padding: 0 35px 0 0;
+			}
+		}
+
+		.button-container {
+			padding: 25px 31px 25px 30px;
+
+			.button-a11 {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				width: 270px;
+				height: 40px;
+
+				.eye {
+					width: 25.26px;
+					height: 17.33px;
 				}
 			}
 		}
+
+		.img-container {
+			display: flex;
+
+			.social-img {
+				margin: auto;
+				width: max-content;
+				height: max-content;
+			}
+		}
 	}
 
-	.cosmetology-buttons {
+	.cosmetology-intro-container {
+		height: 700px;
 		display: grid;
-		grid-template-columns: 50% 25% 25%;
-		grid-area: buttons;
+		grid-template-rows: 87px 533px 80px;
+		justify-content: center;
+		grid-template-areas: "title title"". .""buttons buttons";
+		grid-template-columns: 550px 745px;
 
-		*[type="radio"] {
-			display: none;
-		}
-
-		input:checked+* {
-			background-color: $blue-light;
-		}
-
-		.cosmetology-button {
-			display: flex;
+		.cosmetology-title-container {
+			width: 100%;
+			max-width: 1295px;
+			height: 87px;
+			display: grid;
+			//justify-content: space-between;
 			align-items: center;
-			justify-content: center;
-		}
-	}
-}
+			grid-template-columns: 1fr 220px;
+			grid-area: title;
 
-.information {
-	padding: 80px 0;
-	height: 1344px;
-	width: 100%;
-	max-width: 1296px;
-	display: grid;
-	margin: auto;
-	grid-template-columns: 526px 770px;
-	grid-template-rows: 580px 504px;
-	grid-gap: 80px 0;
+			.nav-container {
+				width: calc(100% - 95px);
+				max-width: 1920px;
 
-	.innovation {
-		width: 526px;
-		height: 580px;
-		padding: 35px 0 45px 40px;
+				.nav {
+					display: flex;
+					width: 100%;
+					justify-content: space-evenly;
+					padding-left: 10px;
+					margin-left: -5px;
+				}
+			}
 
-		.title {
-			width: 125px;
-			height: 40px;
-			margin-bottom: 30px;
-			text-align: center;
-		}
-
-		.info {}
-
-		.link-container {
-			display: flex;
-			width: 160px;
-			justify-content: space-between;
-			align-items: center;
-			padding-top: 25px;
-
-			.link-details {
-				display: inline-block;
-				width: 50px;
+			.make-an-appointment {
+				margin: 0 10px 0 35px;
+				width: 175px;
 				height: 40px;
 			}
-
-			.label {}
 		}
 
-	}
+		.cosmetology {
+			width: 550px;
+			display: grid;
+			grid-template-rows: max-content max-content 90px 134px;
 
-	.numbers {
-		height: 485px;
-		width: 636px;
-		display: grid;
-		grid-template-rows: 70px repeat(4, minmax(min-content, 1fr));
-		align-self: center;
-		justify-self: center;
-		grid-gap: 15px 0;
-		position: relative;
-
-		.title {
-			width: 186px;
-			height: 40px;
-			text-align: center;
-		}
-
-		.number {
-			display: flex;
-			align-items: center;
-			width: 214px;
-			z-index: 2;
-
-			.digits {
-				padding-right: 20px;
+			.cosmetology-title {
+				width: 100%;
+				height: 72px;
+				margin: 133px 0 20px 0;
 			}
 
-			.letters {}
-		}
+			.cosmetology-text {
+				width: 416px;
+			}
 
-		.radio-number {
-			display: none;
+			.cosmetology-button-details {
+				margin-top: 40px;
+				width: 163px;
+				height: 50px;
+			}
 
-			&:checked+* {
-				&.number {
-					width: 460px;
+			.cosmetology-button-details {}
 
-					.digits {
-						padding-right: 30px;
+			.slider-controls {
+				height: min-content;
+				display: flex;
+				padding: 0 60px 60px 0;
+				align-self: flex-end;
+				justify-self: flex-end;
+
+				.slider-control {
+					display: block;
+					width: 60px;
+					height: 50px;
+
+					.slider-control-prev {
+						width: 59px;
 					}
 				}
 			}
 		}
 
-		.patent {
-			position: absolute;
-			bottom: -30px;
-			right: -20px;
-			z-index: 1;
-		}
-	}
+		.cosmetology-buttons {
+			display: grid;
+			grid-template-columns: 50% 25% 25%;
+			grid-area: buttons;
 
-	.news {
-		display: grid;
-		grid-template-columns: 526px 770px;
-		grid-template-rows: 105px repeat(3, max-content);
+			*[type="radio"] {
+				display: none;
+			}
 
-		.title {
-			width: 101px;
-			height: 40px;
-			margin: 35px 0 30px 40px;
-			text-align: center;
-		}
+			input:checked+* {
+				background-color: $blue-light;
+			}
 
-		.radio-news {
-			display: none;
-		}
-
-		.news-label {
-			padding: 35px 40px;
-		}
-
-		.news-content {
-			grid-area: 1/2/5/3;
-			padding: 35px 60px;
-
-			.news-container {
-				.news-title {
-					width: 100%;
-					padding-bottom: 25px;
-				}
-
-				.news-p-list {
-					//width: 629px;
-					list-style: none;
-					width: calc(629px + 18px);
-					padding-left: 18px;
-					.news-list-item {
-						position: relative;
-						&::before{
-							content: "●";
-							color: $blue-dark;
-							position: absolute;
-							left: -18px;
-						}
-						&:not(:last-child){
-							margin-bottom: 15px;
-						}
-					}
-				}
+			.cosmetology-button {
+				display: flex;
+				align-items: center;
+				justify-content: center;
 			}
 		}
 	}
-}
 
-.offers {
-	.offers-title {
-		.offerts-item {
-			.offer-sticker {}
-
-			.offer-text {}
-
-			.offer-arrow {}
-		}
-	}
-}
-
-.upper-footer {
-	.service-container {
-		.service-title {}
-
-		.service-link {}
-	}
-
-	.contacts {
-		.contacts-label {}
-
-		.footer-tel {}
-
-		.main-address {}
-
-		.howToGetThere {}
-
-		.additional-address {}
-	}
-}
-
-/* @media (min-width: 1295px) {
-	.cosmetology-intro-container {
-		width: 1295px;
+	.information {
+		padding: 80px 0;
+		height: 1344px;
+		width: 100%;
+		max-width: 1296px;
+		display: grid;
 		margin: auto;
+		grid-template-columns: 526px 770px;
+		grid-template-rows: 580px 504px;
+		grid-gap: 80px 0;
+
+		.innovation {
+			width: 526px;
+			height: 580px;
+			padding: 35px 0 45px 40px;
+
+			.title {
+				width: 125px;
+				height: 40px;
+				margin-bottom: 30px;
+				text-align: center;
+			}
+
+			.info {}
+
+			.link-container {
+				display: flex;
+				width: 160px;
+				justify-content: space-between;
+				align-items: center;
+				padding-top: 25px;
+
+				.link-details {
+					display: inline-block;
+					width: 50px;
+					height: 40px;
+				}
+
+				.label {}
+			}
+
+		}
+
+		.numbers {
+			height: 485px;
+			width: 636px;
+			display: grid;
+			grid-template-rows: 70px repeat(4, minmax(min-content, 1fr));
+			align-self: center;
+			justify-self: center;
+			grid-gap: 15px 0;
+			position: relative;
+
+			.title {
+				width: 186px;
+				height: 40px;
+				text-align: center;
+			}
+
+			.number {
+				display: flex;
+				align-items: center;
+				width: 214px;
+				z-index: 2;
+
+				.digits {
+					padding-right: 20px;
+				}
+
+				.letters {}
+			}
+
+			.radio-number {
+				display: none;
+
+				&:checked+* {
+					&.number {
+						width: 460px;
+
+						.digits {
+							padding-right: 30px;
+						}
+					}
+				}
+			}
+
+			.patent {
+				position: absolute;
+				bottom: -30px;
+				right: -20px;
+				z-index: 1;
+			}
+		}
+
+		.news {
+			display: grid;
+			grid-template-columns: 526px 770px;
+			grid-template-rows: 105px repeat(3, max-content);
+
+			.title {
+				width: 101px;
+				height: 40px;
+				margin: 35px 0 30px 40px;
+				text-align: center;
+			}
+
+			.radio-news {
+				display: none;
+			}
+
+			.news-label {
+				padding: 35px 40px;
+			}
+
+			.news-content {
+				grid-area: 1/2/5/3;
+				padding: 35px 60px;
+
+				.news-container {
+					.news-title {
+						width: 100%;
+						padding-bottom: 25px;
+					}
+
+					.news-p-list {
+						//width: 629px;
+						list-style: none;
+						width: calc(629px + 18px);
+						padding-left: 18px;
+
+						.news-list-item {
+							position: relative;
+
+							&::before {
+								content: "●";
+								color: $blue-dark;
+								position: absolute;
+								left: -18px;
+							}
+
+							&:not(:last-child) {
+								margin-bottom: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
-} */
+
+	.offers {
+		height: 656px;
+		max-width: 1920px;
+		margin: auto;
+
+		.offers-title {
+			max-width: 1920px;
+			text-align: center;
+			padding: 80px 0 60px 0;
+		}
+
+		.offers-grid-container {
+			margin: 0 auto;
+
+			max-width: 1296px;
+			display: grid;
+			grid-template-columns: repeat(4, max-content);
+			grid-template-rows: max-content;
+			grid-gap: 0 25px;
+
+			.offers-item {
+				width: 306px;
+				height: 343px;
+				display: flex;
+				flex-wrap: wrap;
+
+				.offer-sticker {
+					text-align: center;
+					width: 148px;
+					height: 40px;
+					display: block;
+					margin: 31px 0 0 30px;
+				}
+
+				.link-container {
+					display: flex;
+					margin: 0 30px 25px 30px;
+					height: 64px;
+					align-self: flex-end;
+					align-items: center;
+					justify-content: space-between;
+					width: 100%;
+
+					.offer-text {
+						display: block;
+						//width: calc(100% - 40px - 15px);
+						width: 181px;
+					}
+
+					.offer-arrow {
+						width: 50px;
+						height: 40px;
+					}
+				}
+
+			}
+		}
+
+	}
+
+	.upper-footer {
+		display: grid;
+		grid-template-areas: ". . . contacts"". . . contacts";
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(4, 1fr);
+		height: 392px;
+		max-width: 1296px;
+		margin: auto;
+		grid-gap: 30px 40px;
+
+		.service-container {
+			.service-title {
+				margin: 0 0 20px 0;
+			}
+
+			.service-link {
+				&:not(:last-child) {
+					margin-bottom: 15px;
+				}
+			}
+		}
+
+		.contacts {
+			grid-area: contacts;
+			display: grid;
+
+			.contacts-label {
+				margin-bottom: 10px;
+			}
+
+			.footer-tel {}
+
+			.main-address {}
+
+			.howToGetThere {
+				width: 165px;
+				height: 45px;
+			}
+
+			.additional-address {}
+		}
+	}
+
+	.footer {
+		display: grid;
+		//grid-auto-flow:row;
+		grid-template-columns: 1fr 1fr max-content repeat(4, 80px);
+		grid-template-rows: 80px;
+		//justify-content: center;
+		//align-content: center;
+		align-items: center;
+		margin: 0 auto 0 auto;
+		margin-top: 80px;
+		height: 91px;
+		max-width: 1296px;
+
+		.license {
+			display: block;
+			margin-left: 25px;
+			width: 300px;
+		}
+
+		.privacy-policy {
+			display: block;
+			//text-align: center;
+			margin: 0 71px 0 70px;
+			width: min-content;
+			white-space: nowrap;
+		}
+
+		.button-container {
+			padding: 25px 31px 25px 30px;
+
+			.button-a11 {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				width: 270px;
+				height: 40px;
+
+				.eye {
+					width: 25.26px;
+					height: 17.33px;
+				}
+			}
+		}
+
+		.img-container {
+			display: flex;
+			height: 100%;
+
+			.social-img {
+				margin: auto;
+				width: max-content;
+				height: max-content;
+			}
+		}
+	}
+}

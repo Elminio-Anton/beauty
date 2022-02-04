@@ -172,3 +172,88 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 21px; }
+
+.offers .offers-title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px; }
+
+.offers .offers-item .offer-sticker {
+  line-height: 40px;
+  color: white; }
+
+.offers .offers-item .offer-text {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 31.5px; }
+
+.upper-footer .service-container .service-title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 31.5px; }
+
+.upper-footer .service-container .service-link {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px; }
+
+.upper-footer .contacts .contacts-label {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16.5px; }
+
+.upper-footer .contacts .footer-tel {
+  color: black;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 31.5px; }
+
+.upper-footer .contacts address[class$="address"] {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 31.5px; }
+
+.upper-footer .contacts .howToGetThere {
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em; }
+
+.footer .license {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px; }
+
+.footer .privacy-policy {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px; }
+
+.footer .button-container .button-a11 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px; }
