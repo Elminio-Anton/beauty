@@ -38,7 +38,7 @@ $blue-light-opacity: rgba(0, 134, 138, 0.1);
 			height: max-content;
 			position: relative;
 			appearance: none;
-			background: url("../img/select-triangle.png") no-repeat right center;
+			background: url("./img/select-triangle.png") no-repeat right center;
 
 		}
 	}
@@ -89,12 +89,12 @@ $blue-light-opacity: rgba(0, 134, 138, 0.1);
 				cursor: pointer;
 
 				&.slider-control-prev {
-					background: center no-repeat url("../img/slide-left.png");
+					background: center no-repeat url("./img/slide-left.png");
 					border-right: none;
 				}
 
 				&.slider-control-next {
-					background: center no-repeat url("../img/slide-right.png");
+					background: center no-repeat url("./img/slide-right.png");
 				}
 			}
 		}
@@ -115,7 +115,7 @@ $blue-light-opacity: rgba(0, 134, 138, 0.1);
 
 	.innovation {
 		background: linear-gradient($blue-dark 0px, $blue-dark 350px, transparent 350px, transparent 100%),
-			no-repeat url("../img/first-slide.png"),
+			no-repeat url("./img/first-slide.png"),
 			$blue-dark;
 		background-size: 100%;
 		background-position: left top 140%;
@@ -128,7 +128,7 @@ $blue-light-opacity: rgba(0, 134, 138, 0.1);
 
 		.link-details {
 			border: solid 1px white;
-			background: center no-repeat url("../img/slide-right.png");
+			background: center no-repeat url("./img/slide-right.png");
 		}
 
 		.label {}
@@ -136,7 +136,7 @@ $blue-light-opacity: rgba(0, 134, 138, 0.1);
 
 	.numbers {
 
-		//background: top 75px left 310px no-repeat url("../img/patent.png");
+		//background: top 75px left 310px no-repeat url("./img/patent.png");
 		.title {
 			background-color: $blue-light;
 		}
@@ -186,21 +186,21 @@ $blue-light-opacity: rgba(0, 134, 138, 0.1);
 	}
 
 	.item-1 {
-		background: top no-repeat url("../img/offer-1.png"), $blue-dark;
+		background: top no-repeat url("./img/offer-1.png"), $blue-dark;
 	}
 
 	.item-2 {
-		background: top no-repeat url("../img/offer-2.png"), $blue-dark;
+		background: top no-repeat url("./img/offer-2.png"), $blue-dark;
 
 	}
 
 	.item-3 {
-		background: top no-repeat url("../img/offer-3.png"), $blue-dark;
+		background: top no-repeat url("./img/offer-3.png"), $blue-dark;
 
 	}
 
 	.item-4 {
-		background: top no-repeat url("../img/offer-4.png"), $blue-dark;
+		background: top no-repeat url("./img/offer-4.png"), $blue-dark;
 
 	}
 
@@ -212,7 +212,7 @@ $blue-light-opacity: rgba(0, 134, 138, 0.1);
 		.offer-text {}
 
 		.offer-arrow {
-			background: center no-repeat url("../img/slide-right.png");
+			background: center no-repeat url("./img/slide-right.png");
 			border: solid 1px white;
 			cursor: pointer;
 		}
